@@ -7,3 +7,6 @@ I install the next.js application and removed all the unnecessary pieces and we'
 
 ## Adding my Valuable Assets
 So, let's start clean so I added all of the images and vidoes I will need and also added the font looks neat
+
+## Adding Stylish Navbar
+since this is the first thing you glince on it in any web page so started with making one stylish and kinda simple
