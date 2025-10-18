@@ -13,3 +13,6 @@ Since this is the first thing you glince on it in any web page so started with m
 
 ## Dark and Light toggle
 Thought it would be cool to add a toggle button under the logo just to product my eyes and also i've made a component checks first if the user scheme dark or light.
+
+## Implement Hero Section
+So, it's time for working so started with the Hero section it's the first thing the user will find so added a cute video and make it the width for the whole screen to make it as something out of the page.
