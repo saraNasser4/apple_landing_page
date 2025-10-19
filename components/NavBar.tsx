@@ -6,7 +6,7 @@ function NavBar() {
     
   return (
     <header className='fixed top-0 left-0 right-0 bg-[#fff] dark:bg-[#000] z-50'>
-        <nav className='py-4 flex justify-between items-center max-w-[1000px] mx-auto'>
+        <nav className='py-2 flex justify-between items-center max-w-[1000px] mx-auto'>
             <div>
                <ThemeToggle />
             </div>

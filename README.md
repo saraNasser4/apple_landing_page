@@ -16,3 +16,6 @@ Thought it would be cool to add a toggle button under the logo just to product m
 
 ## Implement Hero Section
 So, it's time for working so started with the Hero section it's the first thing the user will find so added a cute video and make it the width for the whole screen to make it as something out of the page.
+
+## Building Product View
+Since we will have more than one option to represent our products thought it would be cool to implement zustand as a state management to save the scale and the color of the product haven't added yet the product

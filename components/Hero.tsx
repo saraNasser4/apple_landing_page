@@ -10,7 +10,7 @@ function Hero() {
     },[]);
 
   return (
-    <section className='bg-[#000] py-14'>
+    <section className='bg-[#000] py-20 m-0'>
         <h1 className='text-[#f2f2f7]'>MacBook Pro</h1>
         <Image src={'/title.png'} width={800} height={80} alt='Title' />
         <video className='md:max-w-[800px]' ref={videoRef} src={'/videos/hero.mp4'} autoPlay muted playsInline />
