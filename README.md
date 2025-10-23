@@ -19,3 +19,6 @@ So, it's time for working so started with the Hero section it's the first thing 
 
 ## Building Product View
 Since we will have more than one option to represent our products thought it would be cool to implement zustand as a state management to save the scale and the color of the product haven't added yet the product
+
+## Install three.js
+To be able to add 3d cube for Macbook we needed to install three.js to deal with all of it I just implemented it as a cube haven't styled it yet.

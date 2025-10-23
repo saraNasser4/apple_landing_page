@@ -1,5 +1,7 @@
 'use client';
 import useMacbookStore from '@/store'
+import { Box, OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
 import clsx from 'clsx';
 
 function ProductViewer() {
@@ -9,8 +11,14 @@ function ProductViewer() {
       <div className='max-w-[1000px] mx-auto px-2 lg:px-0'>
         <span className='text-xl sm:text-2xl md:text-3xl font-semibold'>Take a closer look.</span>
         <h2>Render Canvas</h2>
-        <p>MacbookPro {scale === 0.06 ? '14' : '16'}&ldquo; in {color === '#2e2c2e' ? 'Black' : 'White'}</p>
-        <div className='flex justify-evenly my-6 items-center '>
+
+        <Canvas className='my-20' camera={{ position: [0, 2, 5], fov: 20, near: 0.1, far: 100}}>
+          <Box position={[0, 0, 0]} material-color={color} scale={20 * scale}/>
+          <OrbitControls enableZoom={false} />
+        </Canvas>
+        
+        <p className='text-center'>MacbookPro {scale === 0.06 ? '14' : '16'}&ldquo; in {color === '#2e2c2e' ? 'Black' : 'White'}</p>
+        <div className='flex justify-evenly my-6 items-center max-w-[500px] mx-auto'>
           <div className='parentCont'>
             <div onClick={()=> setColor('#adb5bd')} className={`${clsx('bg-neutral-300', color === '#adb5bd' && 'active')} childCont`}/>
             <div onClick={()=> setColor('#2e2c2e')} className={`${clsx('bg-neutral-900', color === '#2e2c2e' && 'active')} childCont`}/>
