@@ -13,15 +13,15 @@ function ProductViewer() {
         <h2>Render Canvas</h2>
 
         <Canvas className='my-20' camera={{ position: [0, 2, 5], fov: 20, near: 0.1, far: 100}}>
-          <Box position={[0, 0, 0]} material-color={color} scale={20 * scale}/>
+          <Box position={[0, 0, 0]} material-color={color} scale={15 * scale}/>
           <OrbitControls enableZoom={false} />
         </Canvas>
         
         <p className='text-center'>MacbookPro {scale === 0.06 ? '14' : '16'}&ldquo; in {color === '#2e2c2e' ? 'Black' : 'White'}</p>
         <div className='flex justify-evenly my-6 items-center max-w-[500px] mx-auto'>
           <div className='parentCont'>
-            <div onClick={()=> setColor('#adb5bd')} className={`${clsx('bg-neutral-300', color === '#adb5bd' && 'active')} childCont`}/>
-            <div onClick={()=> setColor('#2e2c2e')} className={`${clsx('bg-neutral-900', color === '#2e2c2e' && 'active')} childCont`}/>
+            <div onClick={()=> setColor('#adb5bd')} className={`${clsx('bg-neutral-300', color === '#adb5bd' ? 'border-neutral-600' : 'border-transparent')} childCont`}/>
+            <div onClick={()=> setColor('#2e2c2e')} className={`${clsx(color === '#2e2c2e' ? 'border-neutral-600' : 'border-transparent')} bg-neutral-900 childCont`}/>
             <div />
           
           </div>

@@ -22,3 +22,6 @@ Since we will have more than one option to represent our products thought it wou
 
 ## Install three.js
 To be able to add 3d cube for Macbook we needed to install three.js to deal with all of it I just implemented it as a cube haven't styled it yet.
+
+## Welcom Back
+Thought it would be a good idea to learn first about three.js since this is the first time working on it and adj some os the style code and here I'm Back.
